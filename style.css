@@ -1,0 +1,47 @@
+body {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto; /* Allow scrolling if needed */
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0;
+}
+
+canvas {
+    background: #000;
+    display: block;
+    margin-bottom: 30px;
+    /* Remove max-width and max-height to prevent scaling/clipping */
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.25em 1em;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #444;
+}
